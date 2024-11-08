@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:personal_card/card_tile.dart';
 import 'package:simple_icons/simple_icons.dart';
 
 void main() {
@@ -55,88 +56,34 @@ class ProfileApp extends StatelessWidget {
                 ),
                 Container(
                   width: 500,
-                  margin: const EdgeInsets.only(left: 50, right: 50, top: 10),
+                  margin: const EdgeInsets.only(
+                    left: 50,
+                    right: 50,
+                    top: 10,
+                  ),
                   child: const Column(
                     children: [
-                      Card(
-                        color: Colors.black38,
-                        child: ListTile(
-                          leading: Icon(
-                            Icons.phone,
-                            color: Colors.white,
-                          ),
-                          title: Text(
-                            "+84 941-7617-88",
-                            style: TextStyle(
-                              color: Colors.white70,
-                              fontFamily: "SourceSans3",
-                            ),
-                          ),
-                        ),
+                      CardTile(
+                        text: "+84 941-7617-88",
+                        icon: Icons.phone,
+                        isPhone: true,
                       ),
-                      Card(
-                        color: Colors.black38,
-                        child: ListTile(
-                          leading: Icon(
-                            SimpleIcons.github,
-                            color: Colors.white,
-                          ),
-                          title: Text(
-                            "github.com/tnt-exe",
-                            style: TextStyle(
-                              color: Colors.white70,
-                              fontFamily: "SourceSans3",
-                            ),
-                          ),
-                        ),
+                      CardTile(
+                        text: "github.com/tnt-exe",
+                        icon: SimpleIcons.github,
                       ),
-                      Card(
-                        color: Colors.black38,
-                        child: ListTile(
-                          leading: Icon(
-                            SimpleIcons.gmail,
-                            color: Colors.white,
-                          ),
-                          title: Text(
-                            "truongthanh717@gmail.com",
-                            style: TextStyle(
-                              color: Colors.white70,
-                              fontFamily: "SourceSans3",
-                            ),
-                          ),
-                        ),
+                      CardTile(
+                        text: "truongthanh717@gmail.com",
+                        icon: SimpleIcons.gmail,
+                        isMail: true,
                       ),
-                      Card(
-                        color: Colors.black38,
-                        child: ListTile(
-                          leading: Icon(
-                            SimpleIcons.linkedin,
-                            color: Colors.white,
-                          ),
-                          title: Text(
-                            "linkedin.com/in/tnt-exe",
-                            style: TextStyle(
-                              color: Colors.white70,
-                              fontFamily: "SourceSans3",
-                            ),
-                          ),
-                        ),
+                      CardTile(
+                        text: "linkedin.com/in/tnt-exe",
+                        icon: SimpleIcons.linkedin,
                       ),
-                      Card(
-                        color: Colors.black38,
-                        child: ListTile(
-                          leading: Icon(
-                            SimpleIcons.facebook,
-                            color: Colors.white,
-                          ),
-                          title: Text(
-                            "facebook.com/tnt.259",
-                            style: TextStyle(
-                              color: Colors.white70,
-                              fontFamily: "SourceSans3",
-                            ),
-                          ),
-                        ),
+                      CardTile(
+                        text: "facebook.com/tnt.259",
+                        icon: SimpleIcons.facebook,
                       ),
                     ],
                   ),
