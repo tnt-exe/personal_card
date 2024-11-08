@@ -19,6 +19,7 @@ class ProfileApp extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                const Spacer(),
                 const Column(
                   children: [
                     CircleAvatar(
@@ -88,6 +89,20 @@ class ProfileApp extends StatelessWidget {
                     ],
                   ),
                 ),
+                const Spacer(),
+                Container(
+                  margin: const EdgeInsets.only(
+                    bottom: 10,
+                  ),
+                  alignment: Alignment.bottomCenter,
+                  child: const Text(
+                    'Made with Flutter',
+                    style: TextStyle(
+                      color: Colors.white38,
+                      fontFamily: 'SourceSans3',
+                    ),
+                  ),
+                )
               ],
             ),
           ),
